@@ -1,0 +1,143 @@
+/* ------------------Put your custom code here--------------------*/
+
+#pagination{ float:right; margin-right:5px;}
+#pagination a{width:auto; height:28px; background:url(../images/pagination_bg.jpg); border:#dddddd solid 1px; padding-left:12px; padding-right:12px; text-decoration:none; line-height:28px; color:#666666;  margin-right:4px; font-weight:normal; padding-top:6px; padding-bottom:6px; text-align:right; }
+.pagination_wrapper{ width:970px; height:auto; float:right; margin-top:10px; margin-right:10px;}
+#pagination strong {
+	padding-left:4px;
+	padding-right:8px;
+	
+}
+.pagination_wrapper-cover{ width:auto; height:auto; float:right;}
+
+.error_messages
+{
+	text-align:center;
+	color:#F00;
+	width:100%;
+	float:left;
+	
+}
+
+.file_box 
+{
+	width:68%;
+	padding-left:32%;
+}
+
+
+.error , .error p
+{
+	color:#FF0000; font-size:12px; display:block; padding-left:17%;
+}
+
+.box-wrapper{
+	width:545px;
+	height:350px;
+	display:block;
+	overflow:auto;
+	background:#e1f4fb;
+	border:1px solid #CCC;
+}
+.boxinner{
+	width:530px;
+	height:auto;
+}
+.boxin-wrap{
+	width:524px;
+	height:20px;
+	padding:3px;
+	color:#000;
+}
+.boxin-wrap:hover{
+	background:#40bdf5;
+	color:#fff;
+}
+.boxin-text{
+	width:400px;
+	height:20px;
+	line-height:20px;
+	text-align:left;
+	padding-right:10px;
+	float:left;
+}
+.boxin-check{
+	width:auto;
+	height:20px;
+	float:left;
+}
+
+
+    .gl_grey{
+      background-color: #a9a9a9;
+    }
+    
+   .wizard-steps .wstep.current{
+        
+        color:#72b110;
+        background-color: #3399cc;
+    }
+    .wizard-steps .wstep.current .donut{
+        
+        color:#72b110;
+        border-color:#72b110;
+    }
+    .wizard-steps .wstep{
+        
+        color:#3399cc;
+    }
+    .wizard-steps .wstep .donut{
+        
+        color:#3399cc;
+        border-color:#3399cc;
+    }
+    
+  /*menu module check box*/
+
+label.radio-inline,
+label.checkbox-inline,
+label.radio,
+label.checkbox {
+    margin-right:2% !important;
+    cursor:pointer !important;
+    font-weight:400 !important;
+    padding:10px 10px 10px 30px !important;
+    background-color:#dcdfd4 !important;
+    margin-bottom:10px!important;
+    text-align: center !important;   
+}
+label.radio-inline.checked,
+label.checkbox-inline.checked,
+label.radio.checked,
+label.checkbox.checked {
+    background-color:#266c8e !important;
+    color:#fff!important ;
+    text-shadow:#000 1px 1px 2px !important;
+}
+
+
+label.radiolabel{
+    background-color:#62b4db !important;
+    color:#fff!important ;
+    text-shadow:#000 1px 1px 2px !important;
+}
+
+/*EOF menu module check box*/  
+  
+
+.sa_text_label{
+    
+    font-size: 12px !important;
+    display: inline-block !important;
+    
+}
+
+
+.sa-right-pull-70{
+   float: right !important;
+   margin-right: 60px !important; 
+}
+.sa-right-pull-150{
+   float: right !important;
+   margin-right: 150px !important;
+}

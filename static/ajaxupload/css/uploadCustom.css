@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 Feb, 2017, 3:44:38 PM
+    Author     : godland
+*/
+
+.deleteimage, .deleteimage_b, .deleteimage_c{
+    cursor: pointer;
+    position: absolute;
+    right: 18px;
+    top: 0px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 8px;
+}
+.imagedivs, .imagedivs_b, .imagedivs_c {
+    border: medium none;
+    box-sizing: border-box;
+    float: left;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 0 10px;
+    position: relative;
+    width: 33.33%;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+.imagedivs img, .imagedivs_b img, .imagedivs_c img {
+    height: 120px;
+    width: 100%;
+}
+.imagedivs a, .imagedivs_b a , .imagedivs_c a  {
+    color: #000 !important;
+    font-size: 12px;
+}
+.txtcenter{
+    text-align: center;
+}
+.ImageManipulation, .ImageManipulation_b, .ImageManipulation_c{
+    display: none;
+    clear: both;
+}
+.manipTxt, .manipTxt_b, .manipTxt_c{
+    float: right;
+    padding:8px 10px;
+    border:solid 1px #ddd;
+    clear:both;
+    display:table;
+}
+.manipTxt a, .manipTxt_b a, .manipTxt_c a{
+    cursor: pointer;
+}
+.image1, .image1_b, .image1_c  {
+    display: table;
+    margin: 0 auto;
+    width:100%;
+    clear:both; 
+}
+.imagedivsGallery {
+    border: medium none;
+    box-sizing: border-box;
+    float: left;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 0 17px;
+    position: relative;
+    width: 35.33%;
+}
+
+.imagedivsGallery img {
+    height: 120px;
+    width: 100%;
+}
+.imagedivsGallery a{
+    color: #000 !important;
+    font-size: 12px;
+}

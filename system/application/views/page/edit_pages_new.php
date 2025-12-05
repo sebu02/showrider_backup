@@ -1,0 +1,254 @@
+<style type="text/css">
+    .error p{
+        color: #ff0000;
+        font-size: 12px;
+    }
+</style>
+
+<div class="header-area">
+    <div class="row align-items-center">
+        <!-- nav and search button -->
+        <div class="col-md-6 col-sm-8 clearfix">
+            <div class="nav-btn pull-left">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="search-box pull-left">
+                <form action="#">
+                    <input type="text" name="search" placeholder="Search..." required>
+                    <i class="ti-search"></i>
+                </form>
+            </div>
+        </div>
+        <!-- profile info & task notification -->
+        <div class="col-md-6 col-sm-4 clearfix">
+            <ul class="notification-area pull-right">
+                <li id="full-view"><i class="ti-fullscreen"></i></li>
+                <li id="full-view-exit"><i class="ti-zoom-out"></i></li>
+                <li class="dropdown">
+                    <i class="ti-bell dropdown-toggle" data-toggle="dropdown">
+                        <!--<span></span>-->
+                    </i>
+
+                </li>
+                <li class="dropdown">
+                    <i class="fa fa-envelope-o dropdown-toggle" data-toggle="dropdown">
+                        <!--<span>3</span>-->
+                    </i>
+
+                </li>
+                <!--                            <li class="settings-btn">
+                                                <i class="ti-settings"></i>
+                                            </li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="page-title-area">
+    <div class="row align-items-center">
+        <div class="col-sm-6">
+            <div class="breadcrumbs-area clearfix">
+                <h4 class="page-title pull-left">Manage Pages</h4>
+
+
+            </div>
+        </div>
+        <div class="col-sm-6 clearfix">
+            <div class="user-profile pull-right">
+                <img class="avatar user-thumb" src="<?php echo base_url() . 'static/'; ?>adminpanel/images/administrator.png" alt="Administrator">
+                <h4 class="user-name dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-angle-down"></i></h4>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="<?php echo base_url(); ?>admin/changepassword/">Change Password</a>
+                    <!--<a class="dropdown-item" href="#">Settings</a>-->
+                    <a class="dropdown-item" href="<?php echo base_url(); ?>secureadmin/logout/">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="main-content-inner">
+    <div class="row">
+
+
+        <div class="col-lg-6 col-ml-12">
+            <div class="row">
+
+
+
+
+                <div class="col-12 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            
+                            <?php
+                            if ($this->session->flashdata('message')) {
+                                ?> 
+                                                <div class="alert-dismiss">
+
+                                                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                                                <strong><?php echo $this->session->flashdata('message'); ?></strong>
+                                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                                    <span class="fa fa-times"></span>
+                                                                </button>
+                                                    </div>
+
+                                                </div>
+                                 <?php
+                            }
+                            ?>
+                            
+                            <h4 class="header-title">Edit Page</h4>
+                            
+                            
+                            
+
+
+                            <div style="height: 30px;"></div>
+                            <form class="multiple_upload_form" action="<?php echo base_url() . 'pageadmin/edit_pages/' . $meta_details->id.'?'.$_SERVER['QUERY_STRING']; ?>" method="post" enctype="multipart/form-data" autocomplete="off">
+
+
+                                <div class="form-group">
+                                    <label for="page">Name<a style="color:#F00; font-size:12px;">*</a></label>
+                                    <input type="text" name="page" class="form-control slug_ref" id="page" value="<?php echo $meta_details->page; ?>" placeholder="" required>
+
+
+                                    <span class="error">
+                                        <?php echo form_error('page'); ?>
+                                    </span>
+                                    <input type="hidden" name="url_type" value="seo_url">
+                                    <input type="hidden" name="show_super_status" value="no">
+                                </div>
+
+                                <?php /**/  ?><div class="form-group">
+                                    <label for="slug">SEO Friendly URL<a style="color:#F00; font-size:12px;">*</a></label>
+                                    <p id="" class="form-text text-muted">
+                                        <span style="font-size:13px;" class="sa_base_url_section"><?php echo base_url(); ?></span>
+                                    </p>
+
+                                    <input type="text" name="slug" value="<?php echo $meta_details->slug; ?>" required class="form-control slug_url_val" readonly id="slug" placeholder="" />
+
+                                    <span class="error">
+                                        <?php echo form_error('slug'); ?>
+                                    </span>
+
+                                    <input type="hidden" name="full_url_sec" class="sa_remain_url_section_input">
+
+                                </div><?php /**/ ?>
+
+                                <input type="hidden" name="page_type" value="normal_page">
+                                
+                                <div class="form-group">
+                                    <label for="short_description">Short Description</label>
+
+                                    <div class="input-group mb-3">
+
+                                        <textarea rows="4" name="short_description" id="short_description" class="form-control" ><?php echo $meta_details->page_description; ?></textarea>
+                                    </div>                                
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="title">Meta Title<b style="color:#F00; font-size:11px;"></b></label>                               
+
+                                    <div class="input-group mb-3">
+
+                                        <textarea rows="2" name="title" id="title" class="form-control" placeholder="" aria-label="" required><?php echo $meta_details->title; ?></textarea>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="description">Meta Description<b style="color:#F00; font-size:11px;"></b></label>                               
+
+                                    <div class="input-group mb-3">
+
+                                        <textarea rows="3" name="description" id="description" class="form-control" placeholder="" aria-label="" required><?php echo $meta_details->description; ?></textarea>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="keywords">Meta Keywords<b style="color:#F00; font-size:11px;"></b></label>                               
+
+                                    <div class="input-group mb-3">
+
+                                        <textarea rows="3" name="keywords" id="tags" class="form-control" placeholder="" aria-label="" required><?php echo $meta_details->keywords; ?></textarea>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="extra_code">Extra Codes<b style="color:#F00; font-size:11px;"></b></label>                               
+
+                                    <div class="input-group mb-3">
+
+                                        <?php $extracode = json_decode($meta_details->extra_code, TRUE); ?>
+
+                                        <textarea rows="10" name="extra_code" id="codes" class="form-control" placeholder="" aria-label="" ><?php echo $extracode[0]; ?></textarea>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary mt-4 pr-4 pl-4">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<?php /**/  ?><script type="text/javascript">
+    $(document).ready(function () {
+//    alert();
+        $(".slug_ref").keyup(function () {
+
+            var string = $(this).val().trim();
+            var string = string.replace(/[^a-zA-Z0-9]/g, '-');
+
+            var string = string.replace(/\-+/g, '-');
+
+            var string = string.toLowerCase();
+
+            $(".slug_url_val").val(string.trim());
+
+        });
+
+        $(".slug_ref").blur(function () {
+            var string = $(this).val().trim();
+            $(".slug_ref").val(string);
+        });
+
+
+        $(".slug_url_val").keyup(function () {
+            var string = $(this).val();
+            var string = string.replace(/[^a-zA-Z0-9]/g, '-');
+
+            var string = string.replace(/\-+/g, '-');
+
+            var string = string.toLowerCase();
+
+            $(".slug_url_val").val(string.trim());
+        });
+
+
+    });
+
+</script><?php /**/ ?>

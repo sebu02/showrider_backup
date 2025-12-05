@@ -1,0 +1,66 @@
+
+
+.trackorder_addressec .useraddresscol .grey_head{
+    float: left !important;
+    line-height: 30px;
+}
+.trackorder_addressec .useraddresscol .grey_head .icon{
+    float: left !important;
+}
+.order_detaillist{
+    margin-left: 0px;
+}
+.order_detaillist li .lab{
+    min-width: 92px !important;
+}
+.manage_order .linkbtn{
+    background: transparent;
+    box-shadow: none;
+}
+.item_status_progresswrap .tab-content{
+    border:none;
+    border-top: dotted 1px #ddd;
+}
+.item_status_progresswrap .tab-content{
+    width:100% !important;
+}
+
+.gl_check_all{
+    width: 58px;
+    margin-left: 10px;
+    margin: -17px 0 0 19px;
+    float: none;
+    line-height: 18px;
+    font-size: 12px;
+    color: #000;
+    padding: 1px 10px;
+    border: 1px solid;
+    border-color: #CCC #CCC #AAA;
+    background-color: #E0E0E0;
+    box-shadow: inset 0 0 1px white;
+    background-image: linear-gradient(to bottom,#FAFAFA 0,#DCDCDC 100%);
+}
+
+.gl_un_check_all{
+    width: 70px;
+    margin: -27px -120px 0 118px;
+    float: left;
+    line-height: 18px;
+    font-size: 12px;
+    color: #000;
+    padding: 1px 11px;
+    border: 1px solid;
+    border-color: #CCC #CCC #AAA;
+    background-color: #E0E0E0;
+    box-shadow: inset 0 0 1px white;
+    background-image: linear-gradient(to bottom,#FAFAFA 0,#DCDCDC 100%);
+}
+
+.check_count{
+    float: right;
+    position: absolute;
+    left: 22%;
+    top: 39px;
+    font-weight: 600;
+    font-size: 13px; 
+}

@@ -1,0 +1,257 @@
+<div id="content" class="clearfix">
+            <div class="contentwrapper"><!--Content wrapper-->
+                <div class="heading">
+                    <h3>Manage File Upload</h3> 
+                    
+                    
+                    <div class="resBtnSearch">
+                <a href="#"><span class="icon16 icomoon-icon-search-3"></span></a>
+            </div>
+
+
+            <div class="search">
+
+                <input type="text" id="tipue_search_input" name="name" class="top-search" placeholder="Search here ..."
+                       value="<?php if ($this->uri->segment(3) != '0') {
+                           $vals = $this->uri->segment(3);
+                           $typed = str_replace("-", " ", $vals);
+                           $typed = str_replace("123", "&", $typed);
+                           echo $typed;
+                       }  ?>"/>
+                <input type="submit" id="tipue_search_button" class="search-btn" value=""/>
+
+
+            </div>
+            <!-- End search -->                  
+                    
+                                    
+                    
+                </div><!-- End .heading-->
+                
+                  <a href="<?php echo base_url(); ?>fileuploadadmin/trash_Combo" class="btn btn-inverse"><span
+                class="icon16 icomoon-icon-loop white"></span> View All</a><br><br>
+                                        
+                                                   
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="box gradient">
+                                <div class="title">
+                                    <h4>
+                                        <span>View Trash Combos</span>
+                                    </h4>
+                                </div>
+                                <div class="content noPad clearfix">
+                                
+                                    <table cellpadding="0" cellspacing="0" border="0" class="dynamicTable display table table-bordered" width="100%">
+                                        <thead>
+                                            <tr>
+                                               <th width="40px">ID</th>
+                                                <th>COMBO</th>
+                                                <th width="150px">RESTORE</th>
+                                                <th width="50px">DELETE</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                 <?php
+				$i=$page_position;
+				foreach($values as $combovalues)
+				{
+				 $i++;
+				?>
+                                            <tr class="odd gradeX">
+                                              <td><?php echo $i; ?></td>
+                                                <td><?php echo $combovalues->combo_name; ?></td>
+                                                <td class="center">
+                                                    <a href="javascript:void(0)" title="Restore Combo" class="tip" onClick="restoreRef('<?php echo base_url(); ?>fileuploadadmin/restoreCombo/<?php echo $combovalues->id.'/'.$this->uri->segment(3).'/'.$this->uri->segment(4);?>')">
+                                                        <span class="icon12 icomoon-icon-undo-2"></span><strong>Restore Combo</strong>
+                                                    </a>
+                                                </td> 
+                                                <td class="center"><a href="#" title="Remove Combo" class="tip" onClick="linkRef('<?php echo base_url();?>fileuploadadmin/deleteCombo/<?php echo $combovalues->id.'/'.$this->uri->segment(3).'/'.$this->uri->segment(4);?>')"><span class="icon12 icomoon-icon-remove"></span></a></td>                 
+                                           </tr>
+                                           
+				 <?php  }?>
+                                            
+                                           
+                                        </tbody>
+                                        
+                                    </table>
+                                </div>
+                            </div><!-- End .box -->
+                        </div><!-- End .span12 -->
+                        
+                        
+                        <div class="pagination_wrapper">
+                             <div class="pagination_wrapper-cover">     
+                                     <div id="pagination">  <?php echo $pagination; ?>  </div>        
+                             </div>
+                   	   </div>
+                       
+                    </div><!-- End .row-fluid -->
+                   
+               
+    			
+    				
+                
+                
+            </div><!-- End contentwrapper -->
+        </div>
+        
+                <?php if($this->session->flashdata('message'))
+		 {
+		 ?>
+   	 	<script type="application/javascript"> 
+			$(document).ready(function() {
+				//Regular success
+				
+					$.pnotify({
+						type: 'success',
+						title: '<?php echo $this->session->flashdata('message') ;?>',
+						text: '',
+						icon: 'picon icon16 iconic-icon-check-alt white',
+						opacity: 0.95,
+						history: false,
+						sticker: false
+					});
+				
+			});
+		</script>
+        <?php
+		}
+		?>  
+        
+        
+<script type="text/javascript">
+    function linkRef(yurl ){
+        var linkref = yurl;
+            if(confirm("Do you really want to Delete ?")){
+                window.location.href=linkref;
+            }
+    }
+   function restoreRef(yurl) {
+        var restoreRef = yurl;
+            if (confirm("Do you really want to restore ?")) {
+                window.location.href = restoreRef;
+            }
+    }
+</script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+
+        $("#tipue_search_button").click(function () {
+
+
+            if ($("#tipue_search_input").val() != '') {
+
+                var name = $("#tipue_search_input").val();
+
+
+                var name1 = name.replace("'", "");
+
+                var name2 = name1.replace('"', '');
+
+                var name3 = name2.replace('/', '');
+
+                var name4 = name3.replace('&', '123');
+
+                var splted = name4.split(" ");
+
+
+                var splite_count = splted.length;
+
+
+                var search_value = '';
+
+
+                for (var i = 0; i < splite_count; i++) {
+
+                    search_value += splted[i] + '-';
+
+                }
+
+
+                var total_name = search_value.substring(0, search_value.length - 1);
+
+
+                window.location = '<?php echo base_url().'fileuploadadmin/trash_Combo/' ?>' + total_name;
+
+
+            }
+
+            else {
+
+                $("#tipue_search_input").focus();
+
+            }
+
+
+        });
+
+
+    });
+</script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+
+        $("#tipue_search_input").keyup(function (e) {
+
+            if (e.which == 13) {
+
+
+                if ($("#tipue_search_input").val() != '') {
+
+                    var name = $("#tipue_search_input").val();
+
+
+                    var name1 = name.replace("'", "");
+
+                    var name2 = name1.replace('"', '');
+
+                    var name3 = name2.replace('/', '');
+
+                    var name4 = name3.replace('&', '123');
+
+                    var splted = name4.split(" ");
+
+
+                    var splite_count = splted.length;
+
+
+                    var search_value = '';
+
+
+                    for (var i = 0; i < splite_count; i++) {
+
+                        search_value += splted[i] + '-';
+
+                    }
+
+
+                    var total_name = search_value.substring(0, search_value.length - 1);
+
+
+                    window.location = '<?php echo base_url().'fileuploadadmin/trash_Combo/' ?>' + total_name;
+
+
+                }
+
+                else {
+
+                    $("#tipue_search_input").focus();
+
+                }
+
+            }
+
+        });
+
+
+    });
+</script>

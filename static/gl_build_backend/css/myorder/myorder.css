@@ -1,0 +1,570 @@
+.row-fluid {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.fullwrap {
+    width: 100%;
+    float: left;
+}
+
+.whitebox {
+    background-color: #fff;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.19);
+}
+
+
+.gl-nopadding {
+    padding: 0px;
+}
+
+.trackorder_addressec .useraddresscol {
+    border-right: solid 1px #ddd;
+}
+
+.trackorder_addressec .useraddresscol .grey_head {
+    float: left !important;
+    line-height: 30px;
+}
+
+.trackorder_addressec .useraddresscol .grey_head {
+    padding: 0px 30px;
+    background: #ffffff;
+    background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f6f6f6));
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+    border-bottom: solid 3px #efefef;
+    color: #1e1e1e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    display: table;
+    float: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #555555;
+    padding: 18px 0px;
+    padding: 10px 20px;
+    font-size: 14px;
+    position: relative;
+    color: #777;
+}
+
+.trackorder_addressec .useraddresscol .grey_head .icon {
+    text-align: center;
+    line-height: 29px;
+    width: 30px;
+    margin-right: 10px;
+    font-size: 14px;
+    height: 30px;
+    color: #005fae;
+    position: relative;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    background-color: #b4ffff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0px 1px #82e1ff;
+    box-shadow: 0px 0px 0px 1px #82e1ff;
+    background-color: transparent;
+    display: inline-block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: solid 1px #005fae;
+}
+
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.track_contentWrapper {
+    padding: 25px;
+    min-height: 200px;
+}
+
+.order_detaillist {
+    margin-left: 0px;
+}
+
+.order_detaillist {
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+
+.order_detaillist li {
+    font-family: 'Montserrat', sans-serif;
+    color: #5b5b5b;
+    font-size: 12px;
+    margin-bottom: 14px;
+    width: 100%;
+    float: left;
+}
+
+.order_detaillist li .lab {
+    min-width: 92px !important;
+}
+
+.order_detaillist li .lab {
+    float: left;
+    font-weight: 300;
+    min-width: 130px;
+    width: 50%;
+}
+
+.manage_order .linkbtn {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.manage_order .linkbtn {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: #888;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.manage_order .linkbtn.colchange {
+    color: #3291e0;
+}
+
+.manage_order .linkbtn i {
+    margin-right: 10px;
+}
+
+.address_wrapper {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #555;
+}
+
+.address_wrapper span {
+    width: 100%;
+    float: left;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.address_wrapper .name, .address_wrapper .phone {
+    font-weight: 600;
+    color: #333;
+}
+
+.address_wrapper .address {
+    font-weight: 400;
+}
+
+
+
+
+.track_contentWrapper {
+    padding: 25px;
+    min-height: 200px;
+}
+
+.m-b25 {
+    margin-bottom: 25px;
+}
+
+.track_contentWrapper .track_contentWrapper_innr {
+    padding-bottom: 25px;
+    border-bottom: solid 1px #ddd;
+}
+
+
+.ja_prd_img_thumb {
+    display: block;
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 50;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    /* margin-bottom: 5px; */
+}
+.prd_imgwrap {
+    width: 100%;
+    float: left;
+}
+.ja_prd_img_thumb img {
+    display: block;
+    margin: 3px auto;
+}
+
+.ja_prd_img_thumb img {
+    margin: 3px auto;
+    position: relative;
+    float: none;
+    display: table !important;
+}
+
+.trackorder_prd_detailswrao {
+    width: 100%;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+.track_contentWrapper .track_contentWrapper_innr .trackorder_prd_detailswrao {
+    margin-bottom: 5px;
+}
+.trackorder_prd_detailswrao .product_name {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.trackorder_prd_detailswrao .seller {
+    width: 100%;
+    float: left;
+    color: #777;
+    font-size: 12px;
+}
+
+
+.prd_det_section {
+    width: 50%;
+    float: left;
+}
+
+.amount_wrap {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    float: left;
+    margin: 40px 0px;
+}
+
+.track_contentWrapper .track_contentWrapper_innr .trackorder_prd_detailswrao + .amount_wrap {
+    margin: 0px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.amount_wrap i {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.order_detaillist {
+    margin-left: 0px;
+}
+.order_detaillist {
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+
+.order_detaillist li {
+    font-family: 'Montserrat', sans-serif;
+    color: #5b5b5b;
+    font-size: 12px;
+    margin-bottom: 14px;
+    width: 100%;
+    float: left;
+}
+
+.order_detaillist li .lab {
+    min-width: 92px !important;
+}   
+
+.order_detaillist li .lab {
+    float: left;
+    font-weight: 300;
+    min-width: 130px;
+    width: 50%;
+}
+
+.delivery_date {
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    color: #666;
+}
+
+.icon {
+    height: 16px;
+    width: 16px;
+}
+
+.delivery_date .icon {
+    text-align: center;
+    line-height: 29px;
+    width: 30px;
+    margin-right: 10px;
+    font-size: 14px;
+    height: 30px;
+    color: #005fae;
+    position: relative;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    background-color: #b4ffff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0px 1px #82e1ff;
+    box-shadow: 0px 0px 0px 1px #82e1ff;
+    background-color: transparent;
+    display: inline-block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: solid 1px #005fae;
+    color: #888;
+    border: solid 1px #888;
+}
+
+
+.item_status_progresswrap {
+    width: 100%;
+    float: left;
+}
+
+.item_status_progresswrap .text_lst {
+    width: 100%;
+    float: left;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: green;
+    margin-bottom: 15px;
+}
+
+.item_status_progresswrap .text_lst li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: #bdbdbd;
+    line-height: 15px;
+    font-size: 12px;
+    padding: 0px 5px;
+}
+
+.item_status_progresswrap .text_lst li.active {
+    color: #388e3c;
+}
+
+.item_status_progresswrap .progress_bar {
+    width: 85%;
+    margin: 25px auto;
+    height: 2px;
+    position: relative;
+    clear: both;
+    background-color: #ddd;
+}
+
+.item_status_progresswrap .progress_bar .steps {
+    width: auto;
+    height: 3px;
+    background-color: #ddd;
+    position: relative;
+    float: left;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+       transition-delay: 0.3s;
+}
+
+.item_status_progresswrap .progress_bar .steps.fone {
+    width: 0px !important;
+    height: 0px !important;
+}
+
+.item_status_progresswrap .progress_bar .circle {
+    z-index: 5;
+}
+.item_status_progresswrap .progress_bar .steps .circle {
+    background-color: #ddd;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    float: right;
+    display: block;
+    position: relative;
+    top: -6px;
+    cursor: default;
+}
+
+.item_status_progresswrap .progress_bar .steps.active .circle {
+    cursor: pointer;
+}
+.item_status_progresswrap .progress_bar .steps.active .circle {
+    background-color: #388e3c;
+}
+.item_status_progresswrap .progress_bar .steps::before {
+    width: 0%;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+       transition-delay: 0.3s;
+}
+
+.item_status_progresswrap .progress_bar .steps.active::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background-color: #388e3c;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+       transition-delay: 0.3s;
+}
+
+.item_status_progresswrap .progress_bar .steps.active .circle.arwbtm:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    opacity: 1;
+    border-style: solid;
+    border-width: 0px 8px 8px 8px;
+    border-color: #0000 #fff0 #ddd #4f40;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+
+.tab-content {
+    background-color: #fff;
+    padding: 15px;
+    border-left: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+    border-bottom-left-radius: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+}
+
+.item_status_progresswrap .tab-content {
+    border: none;
+    border-top: dotted 1px #ddd;
+}
+
+.item_status_progresswrap .tab-content {
+    width: 100% !important;
+}
+.item_status_progresswrap .tab-content {
+    margin: 0px auto;
+    border-top: dotted 1px #ddd;
+    padding: 10px 0px;
+    width: 85%;
+    float: none;
+    display: table;
+}
+.tab-content>.tab-pane {
+    display: none;
+}
+.tab-content>.active {
+    display: block;
+}
+.item_status_progresswrap .tab-content .tab-pane {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #555;
+}   
+
+.item_status_progresswrap .tab-content .tab-pane .trck-head {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #555;
+    font-weight: 500;
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.item_status_progresswrap .tab-content .tab-pane .trck-detail-wrp {
+    width: 100%;
+    float: left;
+}
+.item_status_progresswrap .tab-content .tab-pane .trck-detail {
+    width: 100%;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    height: auto;
+    margin-bottom: 3px;
+}
+.item_status_progresswrap .tab-content .tab-pane .trck-detail .trck-d-date {
+    width: 15%;
+    float: left;
+}
+.item_status_progresswrap .tab-content .tab-pane .trck-detail .trck-d-place {
+    width: 30%;
+    padding-left: 5px;
+    float: left;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.item_status_progresswrap .tab-content .tab-pane .trck-detail .trck-d-cont {
+    width: 40%;
+    padding-left: 5px;
+    float: left;
+}
+.item_status_progresswrap .tab-content .tab-pane .trck-detail-more {
+    width: auto;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    height: 13px;
+    color: #2874f0;
+}
+.item_status_progresswrap_rsp {
+    display: none;
+}
+
+.item_status_progresswrap .progress_bar .steps.error .circle {
+    background-color: #ff6161;
+}
+
+.item_status_progresswrap .progress_bar .steps.error {
+    background-color: #ff6161;
+}
